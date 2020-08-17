@@ -1,0 +1,107 @@
+html, body {
+    background: #1B1420;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #818398;
+}
+
+.area-wrapper {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center; 
+    justify-content: center; 
+    overflow: auto;  
+}
+
+#area {
+    height: 300px;
+    width: 300px;
+    background-color: #82B38B;
+    display: flex;
+    flex-wrap: wrap;
+    border: 4px solid #755B5D;
+    -webkit-box-shadow: 24px 24px 50px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 24px 24px 50px -4px rgba(0,0,0,0.75);
+    box-shadow: 24px 24px 50px -4px rgba(0,0,0,0.75);
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    font-size: 34px;
+    color: #EFF1F1;
+    border: 2px solid #755B5D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal-result-wrapper {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#modal-window {
+    width: 350px;
+    height: 150px;
+    border: 1px solid #818398;
+    background-color: #818398;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+}
+
+#content {
+    margin: 15px 20px;
+    font-size: 30px;
+    color: #1B1420;
+}
+
+#btn-close {
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 15px 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 40px 40px #82B38B inset, 0 0 0 0 #82B38B;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #EFF1F1;
+    transition: .15s ease-in-out;
+    cursor: pointer;
+}
+
+#btn-close:hover {
+    box-shadow: 0 0 10px 0 #82B38B inset, 0 0 10px 4px #82B38B;
+    color: #EFF1F1;
+}
