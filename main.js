@@ -7,11 +7,21 @@ let result = ''
 let move = 0
 
 
+function motion () {
+    let moveArea = document.getElementById('area-move')
+    if (move % 2 === 0){
+        moveArea.innerHTML = 'Move of Crosses'
+    } else {
+        moveArea.innerHTML = 'Move of Zeros'
+    }
+}
+
 area.addEventListener('click', e => {
     if (e.target.className === 'box') {
         if (e.target.innerHTML === '') {
             move % 2 === 0 ? e.target.innerHTML = 'X' : e.target.innerHTML = 'O'
             move++
+            motion()
             check()
         } else {}
     }
