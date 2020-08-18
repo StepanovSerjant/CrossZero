@@ -106,3 +106,35 @@ h1 {
     box-shadow: 0 0 10px 0 #82B38B inset, 0 0 10px 4px #82B38B;
     color: #EFF1F1;
 }
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 38px;
+    }
+
+    #area {
+        height: 300px;
+        width: 300px;
+    }
+    .box {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 560px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    #area {
+        height: 240px;
+        width: 240px;
+    }
+    .box {
+        width: 80px;
+        height: 80px;
+    }
+
+}
