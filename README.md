@@ -17,5 +17,5 @@
 
     mkdir CrossZero
     cd CrossZero
-    git clone
+    git clone https://github.com/StepanovSerjant/CrossZero.git
 
